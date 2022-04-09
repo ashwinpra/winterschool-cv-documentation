@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from collections import deque
 
 #define basic colors
 red = (0, 0, 255)
@@ -23,11 +22,6 @@ def inRange(img,point):
         return True
     else:
         return False
-
-def bfs(img,start,end):
-    pass
-def dfs(img,start,end):
-    pass
 
 def dj(img, start, end):
     #Note that in djikstra algorithm in image, the cost corresponds to distance between two pixels
