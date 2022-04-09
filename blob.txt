@@ -1,7 +1,0 @@
-Blob => Binary Large Object, which is basicall a set of adjacent pixels in the same color
-Basically a region of the image having same color
-To find blobs: iterate through each pixel, once you find one pixel of interested color, 
-check its neighborhood, and when you find another pixel of same color, check nbhd of that, and so on
-
-Kernel 
-Filter 

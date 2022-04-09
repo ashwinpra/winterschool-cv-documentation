@@ -1,0 +1,63 @@
+They are both graph/tree traversal techniques
+
+DFS => Depth First Search: 
+->We traverse all the children first, then the siblings
+->Here we use STACK
+->We go to first line, and add everything to stack
+->Then we pop the stack and traverse that element's neighbours
+->Similarly we go on until all are traversed 
+
+
+         A
+      B     C
+    D     E   F
+
+A first, then B,C 
+then pop C and traverse E and F
+then pop F, then E
+then pop B and traverse D, then pop D
+order in queue: DFECBA 
+
+BFS => Breadth First Search: 
+->We traverse all the siblings first, then the children
+->Here we use QUEUE
+->We go to first line, add all the elements to queue
+->We move to next one, add all to queue -> Then we pop the first element from this queue as it's neighbours have been traversed
+->Similarly we traverse through each line, and pop elements whenever all their neighbours are traversed
+
+         A
+      B     C
+    D     E   F
+
+A first, then B, C, then pop A 
+then from B we go to D, and pop B
+then from C to E and F, and pop C
+then pop D, then E, then F
+Order in queue: FEDCBA (A in the front)
+Basically whatever is in the front of queue, we traverse the neighbours/nodes of that
+
+
+****Very Imp**** 
+For shortest path traversal, we go for BFS
+
+
+We consider an image as a tree, wherein the adjacent pixels to one pixel will be considered its children
+and each children pixels are siblings of each other
+
+Blob => Binary Large Object, which is basicall a set of adjacent pixels in the same color
+Basically a region of the image having same color
+To find blobs: iterate through each pixel, once you find one pixel of interested color, 
+check its neighborhood, and when you find another pixel of same color, check nbhd of that, and so on
+
+HSV Color Space: 
+    Hue-Saturation-Value 
+    Hue is the color [0,179]
+    Saturation is the greyness [0,255]
+    Value is the brightness [0,255]
+
+    HSV is used more often in CV because of its superior performance in varying illumination levels as compared to RGB
+    Thresholding and masking is usually done in HSV color space 
+    It helps us do better segmentation and filtering on objects even under varying resolution and lighting conditions
+
+Converting between BGR and hHSV can be done by using the flag cv.COLOR_BGRHSV
+eg: img = cv.cvtColor(img,COLOR_BGR2HSV)

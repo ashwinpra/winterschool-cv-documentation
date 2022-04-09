@@ -12,10 +12,7 @@ def dijkstar(graph, start, end):
         parent[node]= start
         visited[node]=False
     value[start] = 0
-    # print(value['E'])
-    # print(value)
-    # print(parent['C'])
-    # print(visited)
+   
     while(all(visited.values())==False):
         min_value_node = (min(value, key=value.get))
         visited[min_value_node] = True
