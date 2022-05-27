@@ -22,7 +22,7 @@ cv2.namedWindow('Border 1',cv2.WINDOW_NORMAL)
 cv2.imshow('Border 1',matrix.astype(np.uint8))
 
 # Method 2: Use inbuilt functions
-new = cv2.copyMakeBorder(img,20,20,20,20,cv2.BORDER_CONSTANT,None,(255,0,0))
+new = cv2.copyMakeBorder(img,20,20,20,20,cv2.BORDER_NORMAL,None,(255,0,0))
 
 # after img, 4 numbers are the distances of border from top,bottom,left,right
 # Border types:
