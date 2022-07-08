@@ -1,6 +1,7 @@
+# Introduction 
+This repository was made to keep track of the programming files I made during the 2022 Winter School Workshop on Computer Vision conducted by Technology Robotix Society of IIT Kharagpur, as well as to document my learnings.
 
-
-# TRS Winter School - Computer Vision Vertical - Documentation
+# Documentation
 
 ## Pre-requisite Packages:
 
