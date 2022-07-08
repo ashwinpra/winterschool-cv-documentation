@@ -1,6 +1,8 @@
 # Introduction 
 This repository was made to keep track of the programming files I made during the 2022 Winter School Workshop on Computer Vision conducted by Technology Robotix Society of IIT Kharagpur, as well as to document my learnings.
 
+The final team project can be found in <a href="https://github.com/C-12-14/WinterSchool-Team-Project">this</a> repository.
+
 # Documentation
 
 ## Pre-requisite Packages:
